@@ -15,43 +15,13 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: 'Data Analytics Dashboard',
+    title: 'College Management Analysis',
     description:
-      'Interactive dashboard built with Power BI for visualizing sales trends, customer behavior, and KPIs with real-time data filtering.',
-    tech: ['Power BI', 'SQL', 'DAX', 'Excel'],
+      'Developed a comprehensive SQL-based data analysis project demonstrating proficiency in database design, data extraction, and performance optimization. Utilized MySQL to create structured databases, design relational schemas, and implement advanced queries involving joins, subqueries, and window functions to derive meaningful business insights. Integrated views, triggers, and stored procedures to automate workflows and maintain data integrity.',
+    tech: ['MySQL', 'SQL', 'Database Design', 'Stored Procedures'],
     github: '#',
-    live: '#',
     gradient: 'from-[hsl(190,100%,50%)] to-[hsl(210,100%,55%)]',
-    emoji: '📊',
-  },
-  {
-    title: 'IoT Monitoring System',
-    description:
-      'Real-time environmental monitoring system using Arduino sensors with a React dashboard for temperature, humidity, and air quality.',
-    tech: ['React', 'Node.js', 'Arduino', 'MQTT'],
-    github: '#',
-    live: '#',
-    gradient: 'from-[hsl(265,80%,60%)] to-[hsl(290,70%,55%)]',
-    emoji: '🌡️',
-  },
-  {
-    title: 'Machine Learning Pipeline',
-    description:
-      'End-to-end ML pipeline for predicting equipment failure using sensor data. Includes data preprocessing, model training, and deployment.',
-    tech: ['Python', 'Scikit-learn', 'Pandas', 'Flask'],
-    github: '#',
-    gradient: 'from-[hsl(50,80%,50%)] to-[hsl(30,90%,55%)]',
-    emoji: '🤖',
-  },
-  {
-    title: 'E-Commerce Analytics',
-    description:
-      'Comprehensive analysis of e-commerce data with Python. Customer segmentation, RFM analysis, and sales forecasting using time series.',
-    tech: ['Python', 'SQL', 'Matplotlib', 'Seaborn'],
-    github: '#',
-    live: '#',
-    gradient: 'from-[hsl(140,60%,45%)] to-[hsl(170,70%,50%)]',
-    emoji: '🛒',
+    emoji: '🎓',
   },
 ];
 
@@ -65,7 +35,7 @@ const Projects = () => {
             Featured <span className="text-gradient">Projects</span>
           </h2>
           <p className="section-subtitle mt-4">
-            A showcase of projects spanning data analytics, IoT, and web development.
+            A showcase of my projects in data analysis and database engineering.
           </p>
         </AnimatedSection>
 
