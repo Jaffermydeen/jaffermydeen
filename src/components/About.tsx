@@ -24,35 +24,13 @@ const About = () => {
         <AnimatedSection>
           <p className="text-primary font-mono text-sm mb-2">{'// about me'}</p>
           <h2 className="section-title">
-            Get to Know <span className="text-gradient">Me</span>
+            Get to Know <span className="text-gradient">I am a passionate Aspiring Data Analyst and BCA Graduate with strong skills in , Excel,  Power BI and SQL . I enjoy working with data to uncover insights, create dashboards, and support data-driven decisions. My academic background in computer applications has helped me build a strong foundation in analytical thinking and problem-solving. I am continuously learning new tools and techniques to grow as a data professional. </span>
           </h2>
         </AnimatedSection>
 
         <div className="grid lg:grid-cols-2 gap-12 mt-12">
           {/* About text */}
-          <AnimatedSection delay={0.2} direction="left">
-            <div className="space-y-6">
-              <p className="text-muted-foreground leading-relaxed text-lg">
-                I'm a passionate <span className="text-foreground font-medium">I am a passionate Aspiring Data Analyst and BCA Graduate with strong skills in SQL, Excel, and Power BI. I enjoy working with data to uncover insights, create dashboards, and support data-driven decisions. My academic background in computer applications has helped me build a strong foundation in analytical thinking and problem-solving. I am continuously learning new tools and techniques to grow as a data professional.</span> and{' '}
-                <span className="text-foreground font-medium">BCA Graduate</span> with a deep love
-                for technology and problem-solving. My journey bridges the gap between hardware
-                engineering and data-driven insights.
-              </p>
-              <p className="text-muted-foreground leading-relaxed text-lg">
-                I specialize in transforming raw data into meaningful stories using tools like{' '}
-                <span className="text-primary">Python</span>,{' '}
-                <span className="text-primary">SQL</span>, and{' '}
-                <span className="text-primary">Power BI</span>. When I'm not crunching numbers,
-                you'll find me building web applications, exploring IoT, or contributing to
-                open-source projects.
-              </p>
-              <p className="text-muted-foreground leading-relaxed text-lg">
-                I believe in continuous learning and staying at the cutting edge of technology.
-                My goal is to leverage data analytics to solve real-world problems and drive
-                innovation.
-              </p>
-            </div>
-          </AnimatedSection>
+          
 
           {/* Stats grid */}
           <AnimatedSection delay={0.4} direction="right">
