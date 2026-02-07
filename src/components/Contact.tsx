@@ -6,6 +6,13 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Send, Github, Linkedin, Mail, Instagram, Phone, MapPin } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import { z } from 'zod';
+
+const contactSchema = z.object({
+  name: z.string().trim().min(1, 'Name is required').max(100, 'Name must be less than 100 characters'),
+  email: z.string().trim().email('Please enter a valid email address').max(255, 'Email must be less than 255 characters'),
+  message: z.string().trim().min(1, 'Message is required').max(1000, 'Message must be less than 1000 characters'),
+});
 
 const socialLinks = [
   { icon: Github, label: 'GitHub', href: '#', color: 'hover:text-foreground' },
@@ -16,14 +23,29 @@ const socialLinks = [
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [errors, setErrors] = useState<{ name?: string; email?: string; message?: string }>({});
   const [sending, setSending] = useState(false);
   const { toast } = useToast();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    // Validate inputs using zod
+    const result = contactSchema.safeParse(formData);
+    if (!result.success) {
+      const fieldErrors: { name?: string; email?: string; message?: string } = {};
+      result.error.errors.forEach((err) => {
+        const field = err.path[0] as keyof typeof fieldErrors;
+        if (field) fieldErrors[field] = err.message;
+      });
+      setErrors(fieldErrors);
+      return;
+    }
+
+    setErrors({});
     setSending(true);
 
-    // Simulate sending
+    // Simulate sending (no backend connected)
     setTimeout(() => {
       setSending(false);
       toast({
@@ -59,10 +81,11 @@ const Contact = () => {
                   id="name"
                   placeholder="John Doe"
                   value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  required
-                  className="bg-card border-border focus:border-primary transition-colors"
+                  onChange={(e) => { setFormData({ ...formData, name: e.target.value }); setErrors((prev) => ({ ...prev, name: undefined })); }}
+                  maxLength={100}
+                  className={`bg-card border-border focus:border-primary transition-colors ${errors.name ? 'border-destructive' : ''}`}
                 />
+                {errors.name && <p className="text-sm text-destructive mt-1">{errors.name}</p>}
               </div>
               <div>
                 <label htmlFor="email" className="text-sm text-muted-foreground font-medium mb-2 block">
@@ -73,10 +96,11 @@ const Contact = () => {
                   type="email"
                   placeholder="john@example.com"
                   value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  required
-                  className="bg-card border-border focus:border-primary transition-colors"
+                  onChange={(e) => { setFormData({ ...formData, email: e.target.value }); setErrors((prev) => ({ ...prev, email: undefined })); }}
+                  maxLength={255}
+                  className={`bg-card border-border focus:border-primary transition-colors ${errors.email ? 'border-destructive' : ''}`}
                 />
+                {errors.email && <p className="text-sm text-destructive mt-1">{errors.email}</p>}
               </div>
               <div>
                 <label htmlFor="message" className="text-sm text-muted-foreground font-medium mb-2 block">
@@ -87,10 +111,11 @@ const Contact = () => {
                   placeholder="Tell me about your project..."
                   rows={5}
                   value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  required
-                  className="bg-card border-border focus:border-primary transition-colors resize-none"
+                  onChange={(e) => { setFormData({ ...formData, message: e.target.value }); setErrors((prev) => ({ ...prev, message: undefined })); }}
+                  maxLength={1000}
+                  className={`bg-card border-border focus:border-primary transition-colors resize-none ${errors.message ? 'border-destructive' : ''}`}
                 />
+                {errors.message && <p className="text-sm text-destructive mt-1">{errors.message}</p>}
               </div>
               <Button
                 type="submit"
