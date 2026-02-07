@@ -45,7 +45,7 @@ const Navbar = () => {
           onClick={() => handleClick('#home')}
           className="text-xl font-bold font-heading text-gradient"
         >
-          {'<Dev />'}
+          {'<Jaffer />'}
         </button>
 
         {/* Desktop nav */}
