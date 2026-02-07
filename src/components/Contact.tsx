@@ -4,13 +4,13 @@ import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Send, Github, Linkedin, Mail, Instagram } from 'lucide-react';
+import { Send, Github, Linkedin, Mail, Instagram, Phone, MapPin } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 const socialLinks = [
   { icon: Github, label: 'GitHub', href: '#', color: 'hover:text-foreground' },
   { icon: Linkedin, label: 'LinkedIn', href: '#', color: 'hover:text-[hsl(210,80%,55%)]' },
-  { icon: Mail, label: 'Email', href: 'mailto:your@email.com', color: 'hover:text-primary' },
+  { icon: Mail, label: 'Email', href: 'mailto:jaffermydeen22@gmail.com', color: 'hover:text-primary' },
   { icon: Instagram, label: 'Instagram', href: '#', color: 'hover:text-[hsl(330,70%,55%)]' },
 ];
 
@@ -130,7 +130,15 @@ const Contact = () => {
                 <div className="space-y-4">
                   <div className="flex items-center gap-3 text-muted-foreground">
                     <Mail size={18} className="text-primary" />
-                    <span>your@email.com</span>
+                    <a href="mailto:jaffermydeen22@gmail.com" className="hover:text-primary transition-colors">jaffermydeen22@gmail.com</a>
+                  </div>
+                  <div className="flex items-center gap-3 text-muted-foreground">
+                    <Phone size={18} className="text-primary" />
+                    <a href="tel:+916379369257" className="hover:text-primary transition-colors">+91 6379369257</a>
+                  </div>
+                  <div className="flex items-center gap-3 text-muted-foreground">
+                    <MapPin size={18} className="text-primary" />
+                    <span>Bangalore, India</span>
                   </div>
                 </div>
               </div>
