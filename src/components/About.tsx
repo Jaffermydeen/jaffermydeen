@@ -23,8 +23,8 @@ const About = () => {
       <div className="section-container">
         <AnimatedSection>
           <p className="text-primary font-mono text-sm mb-2">{'// about me'}</p>
-          <h2 className="section-title">
-            Get to Know <span className="text-gradient">I am a passionate Aspiring Data Analyst and BCA Graduate with strong skills in , Excel,  Power BI and SQL . I enjoy working with data to uncover insights, create dashboards, and support data-driven decisions. My academic background in computer applications has helped me build a strong foundation in analytical thinking and problem-solving. I am continuously learning new tools and techniques to grow as a data professional. </span>
+          <h2 className="section-title">Get to Know 
+I am a passionate Aspiring Data Analyst and BCA Graduate with strong skills in , Excel,  Power BI and SQL . I enjoy working with data to uncover insights, create dashboards, and support data-driven decisions. My academic background in computer applications has helped me build a strong foundation in analytical thinking and problem-solving. I am continuously learning new tools and techniques to grow as a data professional. <span className="text-gradient">I am a passionate Aspiring Data Analyst and BCA Graduate with strong skills in , Excel,  Power BI and SQL . I enjoy working with data to uncover insights, create dashboards, and support data-driven decisions. My academic background in computer applications has helped me build a strong foundation in analytical thinking and problem-solving. I am continuously learning new tools and techniques to grow as a data professional. </span>
           </h2>
         </AnimatedSection>
 
