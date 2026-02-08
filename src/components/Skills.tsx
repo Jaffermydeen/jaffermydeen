@@ -14,16 +14,6 @@ interface SkillCategory {
 
 const skillCategories: SkillCategory[] = [
   {
-    title: 'Data & Analytics',
-    emoji: '📊',
-    skills: [
-      { name: 'Python', color: 'hsl(50 80% 50%)' },
-      { name: 'SQL', color: 'hsl(200 70% 50%)' },
-      { name: 'Power BI', color: 'hsl(45 90% 50%)' },
-      { name: 'Excel', color: 'hsl(140 60% 45%)' },
-    ],
-  },
-  {
     title: 'Arts & Science',
     emoji: '⚡',
     skills: [
@@ -37,6 +27,10 @@ const skillCategories: SkillCategory[] = [
     title: 'Tools & Others',
     emoji: '🛠️',
     skills: [
+      { name: 'Python', color: 'hsl(50 80% 50%)' },
+      { name: 'C', color: 'hsl(200 70% 50%)' },
+      { name: 'C++', color: 'hsl(210 75% 55%)' },
+      { name: 'HTML', color: 'hsl(15 85% 55%)' },
       { name: 'Git / GitHub', color: 'hsl(10 80% 55%)' },
       { name: 'VS Code', color: 'hsl(210 90% 55%)' },
       { name: 'Pega Infinity', color: 'hsl(200 85% 50%)' },
@@ -50,7 +44,6 @@ const skillCategories: SkillCategory[] = [
     skills: [
       { name: 'Tamil', color: 'hsl(340 70% 55%)' },
       { name: 'English', color: 'hsl(210 60% 55%)' },
-      { name: 'Japanese', color: 'hsl(0 70% 55%)' },
     ],
   },
 ];
