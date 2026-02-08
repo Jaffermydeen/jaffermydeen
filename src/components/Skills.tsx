@@ -24,7 +24,7 @@ const skillCategories: SkillCategory[] = [
     ],
   },
   {
-    title: 'Engineering',
+    title: 'Arts & Science',
     emoji: '⚡',
     skills: [
       { name: 'MATLAB', color: 'hsl(20 80% 50%)' },
