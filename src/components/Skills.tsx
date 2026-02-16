@@ -86,16 +86,14 @@ const Skills = () => {
                   <span className="text-foreground">{category.title}</span>
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {category.skills.map((skill) => {}
-
-
-
-
-
-
-
-
-                )}
+                  {category.skills.map((skill) => (
+                    <span
+                      key={skill.name}
+                      className={`px-3 py-1.5 rounded-full text-sm font-medium ${skill.color}`}
+                    >
+                      {skill.name}
+                    </span>
+                  ))}
                 </div>
               </motion.div>
             </AnimatedSection>
