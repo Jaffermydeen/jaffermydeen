@@ -62,7 +62,7 @@ const Skills = () => {
         <AnimatedSection>
           <p className="text-primary font-mono text-sm mb-2">{'// my skills'}</p>
           <h2 className="section-title">
-            Tech <span className="text-gradient">Arsenal</span>
+            Tech <span className="text-gradient">​Skills</span>
           </h2>
           <p className="section-subtitle mt-4">
             A collection of technologies and tools I've honed through projects and continuous learning.
@@ -86,14 +86,14 @@ const Skills = () => {
                   <span className="text-foreground">{category.title}</span>
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {category.skills.map((skill) => (
-                    <span
-                      key={skill.name}
-                      className={`px-3 py-1.5 rounded-full text-sm font-medium ${skill.color}`}
-                    >
+                  {category.skills.map((skill) =>
+                <span
+                  key={skill.name}
+                  className={`px-3 py-1.5 rounded-full text-sm font-medium ${skill.color}`}>
+
                       {skill.name}
                     </span>
-                  ))}
+                )}
                 </div>
               </motion.div>
             </AnimatedSection>
