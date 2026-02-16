@@ -12,7 +12,7 @@ const Footer = () => {
           </div>
 
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Jaffer Mydeen A. All rights reserved.
+            © {new Date().getFullYear()} Jaffer Mydeen. All rights reserved.
           </p>
 
           <div className="flex gap-4">
