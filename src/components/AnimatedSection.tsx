@@ -11,31 +11,31 @@ interface AnimatedSectionProps {
 const variants = {
   up: {
     hidden: { opacity: 0, y: 60 },
-    visible: { opacity: 1, y: 0 },
+    visible: { opacity: 1, y: 0 }
   },
   left: {
     hidden: { opacity: 0, x: -60 },
-    visible: { opacity: 1, x: 0 },
+    visible: { opacity: 1, x: 0 }
   },
   right: {
     hidden: { opacity: 0, x: 60 },
-    visible: { opacity: 1, x: 0 },
+    visible: { opacity: 1, x: 0 }
   },
   fade: {
     hidden: { opacity: 0 },
-    visible: { opacity: 1 },
+    visible: { opacity: 1 }
   },
   scale: {
     hidden: { opacity: 0, scale: 0.9 },
-    visible: { opacity: 1, scale: 1 },
-  },
+    visible: { opacity: 1, scale: 1 }
+  }
 };
 
 const AnimatedSection = ({
   children,
   className = '',
   delay = 0,
-  direction = 'up',
+  direction = 'up'
 }: AnimatedSectionProps) => {
   return (
     <motion.div
@@ -43,12 +43,12 @@ const AnimatedSection = ({
       whileInView="visible"
       viewport={{ once: true, margin: '-80px' }}
       transition={{ duration: 0.6, delay, ease: 'easeOut' }}
-      variants={variants[direction]}
-      className={className}
-    >
+      variants={variants[direction]} className="text-pink-700 bg-primary-foreground">
+
+
       {children}
-    </motion.div>
-  );
+    </motion.div>);
+
 };
 
 export default AnimatedSection;
