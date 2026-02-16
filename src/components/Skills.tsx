@@ -14,6 +14,16 @@ interface SkillCategory {
 
 const skillCategories: SkillCategory[] = [
   {
+    title: 'Programming Knowledge',
+    emoji: '💻',
+    skills: [
+      { name: 'HTML', color: 'hsl(15 85% 55%)' },
+      { name: 'CSS', color: 'hsl(210 80% 55%)' },
+      { name: 'C', color: 'hsl(200 70% 50%)' },
+      { name: 'C++', color: 'hsl(220 75% 55%)' },
+    ],
+  },
+  {
     title: 'Arts & Science',
     emoji: '⚡',
     skills: [
