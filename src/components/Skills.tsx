@@ -13,47 +13,47 @@ interface SkillCategory {
 }
 
 const skillCategories: SkillCategory[] = [
-  {
-    title: 'Programming Knowledge',
-    emoji: '💻',
-    skills: [
-      { name: 'HTML', color: 'hsl(15 85% 55%)' },
-      { name: 'CSS', color: 'hsl(210 80% 55%)' },
-      { name: 'C', color: 'hsl(200 70% 50%)' },
-      { name: 'C++', color: 'hsl(220 75% 55%)' },
-    ],
-  },
-  {
-    title: 'Arts & Science',
-    emoji: '⚡',
-    skills: [
-      { name: 'MATLAB', color: 'hsl(20 80% 50%)' },
-      { name: 'Arduino / IoT', color: 'hsl(190 70% 45%)' },
-      { name: 'Circuit Design', color: 'hsl(265 80% 60%)' },
-      { name: 'Embedded C', color: 'hsl(220 70% 50%)' },
-    ],
-  },
-  {
-    title: 'Tools & Others',
-    emoji: '🛠️',
-    skills: [
-      { name: 'Excel', color: 'hsl(140 70% 40%)' },
-      { name: 'Power BI', color: 'hsl(45 90% 50%)' },
-      { name: 'SQL', color: 'hsl(210 75% 55%)' },
-      { name: 'Tableau', color: 'hsl(200 85% 50%)' },
-      { name: 'Data Analysis', color: 'hsl(265 70% 55%)' },
-      { name: 'Data Cleaning', color: 'hsl(15 80% 55%)' },
-    ],
-  },
-  {
-    title: 'Languages',
-    emoji: '🌐',
-    skills: [
-      { name: 'Tamil', color: 'hsl(340 70% 55%)' },
-      { name: 'English', color: 'hsl(210 60% 55%)' },
-    ],
-  },
-];
+{
+  title: 'Programming Knowledge',
+  emoji: '💻',
+  skills: [
+  { name: 'HTML', color: 'hsl(15 85% 55%)' },
+  { name: 'CSS', color: 'hsl(210 80% 55%)' },
+  { name: 'C', color: 'hsl(200 70% 50%)' },
+  { name: 'C++', color: 'hsl(220 75% 55%)' }]
+
+},
+{
+  title: 'Arts & Science',
+  emoji: '⚡',
+  skills: [
+  { name: 'MATLAB', color: 'hsl(20 80% 50%)' },
+  { name: 'Arduino / IoT', color: 'hsl(190 70% 45%)' },
+  { name: 'Circuit Design', color: 'hsl(265 80% 60%)' },
+  { name: 'Embedded C', color: 'hsl(220 70% 50%)' }]
+
+},
+{
+  title: 'Tools & Others',
+  emoji: '🛠️',
+  skills: [
+  { name: 'Excel', color: 'hsl(140 70% 40%)' },
+  { name: 'Power BI', color: 'hsl(45 90% 50%)' },
+  { name: 'SQL', color: 'hsl(210 75% 55%)' },
+  { name: 'Tableau', color: 'hsl(200 85% 50%)' },
+  { name: 'Data Analysis', color: 'hsl(265 70% 55%)' },
+  { name: 'Data Cleaning', color: 'hsl(15 80% 55%)' }]
+
+},
+{
+  title: 'Languages',
+  emoji: '🌐',
+  skills: [
+  { name: 'Tamil', color: 'hsl(340 70% 55%)' },
+  { name: 'English', color: 'hsl(210 60% 55%)' }]
+
+}];
+
 
 const Skills = () => {
   return (
@@ -70,40 +70,40 @@ const Skills = () => {
         </AnimatedSection>
 
         <div className="grid md:grid-cols-2 gap-6 mt-12">
-          {skillCategories.map((category, catIdx) => (
-            <AnimatedSection
-              key={category.title}
-              delay={catIdx * 0.15}
-              direction={catIdx % 2 === 0 ? 'left' : 'right'}
-            >
+          {skillCategories.map((category, catIdx) =>
+          <AnimatedSection
+            key={category.title}
+            delay={catIdx * 0.15}
+            direction={catIdx % 2 === 0 ? 'left' : 'right'}>
+
               <motion.div
-                whileHover={{ y: -4 }}
-                transition={{ type: 'spring', stiffness: 300 }}
-                className="card-gradient rounded-xl p-6 h-full"
-              >
+              whileHover={{ y: -4 }}
+              transition={{ type: 'spring', stiffness: 300 }}
+              className="card-gradient rounded-xl p-6 h-full">
+
                 <h3 className="text-lg font-heading font-semibold mb-5 flex items-center gap-2">
                   <span>{category.emoji}</span>
                   <span className="text-foreground">{category.title}</span>
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {category.skills.map((skill) => (
-                    <motion.span
-                      key={skill.name}
-                      whileHover={{ scale: 1.08, y: -2 }}
-                      className="px-4 py-2 rounded-lg text-sm font-medium text-foreground border border-border/50 bg-muted/50 cursor-default"
-                      style={{ borderColor: skill.color, boxShadow: `0 0 12px ${skill.color}20` }}
-                    >
-                      {skill.name}
-                    </motion.span>
-                  ))}
+                  {category.skills.map((skill) => {}
+
+
+
+
+
+
+
+
+                )}
                 </div>
               </motion.div>
             </AnimatedSection>
-          ))}
+          )}
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default Skills;
