@@ -21,7 +21,6 @@ const skillCategories: SkillCategory[] = [
   { name: 'CSS', color: 'hsl(210 80% 55%)' },
   { name: 'C', color: 'hsl(200 70% 50%)' },
   { name: 'C++', color: 'hsl(220 75% 55%)' }]
-
 },
 {
   title: 'Arts & Science',
@@ -31,7 +30,6 @@ const skillCategories: SkillCategory[] = [
   { name: 'Arduino / IoT', color: 'hsl(190 70% 45%)' },
   { name: 'Circuit Design', color: 'hsl(265 80% 60%)' },
   { name: 'Embedded C', color: 'hsl(220 70% 50%)' }]
-
 },
 {
   title: 'Tools & Others',
@@ -43,7 +41,6 @@ const skillCategories: SkillCategory[] = [
   { name: 'Tableau', color: 'hsl(200 85% 50%)' },
   { name: 'Data Analysis', color: 'hsl(265 70% 55%)' },
   { name: 'Data Cleaning', color: 'hsl(15 80% 55%)' }]
-
 },
 {
   title: 'Languages',
@@ -51,7 +48,6 @@ const skillCategories: SkillCategory[] = [
   skills: [
   { name: 'Tamil', color: 'hsl(340 70% 55%)' },
   { name: 'English', color: 'hsl(210 60% 55%)' }]
-
 }];
 
 
@@ -86,22 +82,22 @@ const Skills = () => {
                   <span className="text-foreground">{category.title}</span>
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {category.skills.map((skill) => {}
-
-
-
-
-
-
-                )}
+                  {category.skills.map((skill) => (
+                    <span
+                      key={skill.name}
+                      className="px-3 py-1.5 rounded-full text-sm font-medium border"
+                      style={{ color: skill.color, borderColor: skill.color, background: `${skill.color}18` }}>
+                      {skill.name}
+                    </span>
+                  ))}
                 </div>
               </motion.div>
             </AnimatedSection>
           )}
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 };
 
 export default Skills;
