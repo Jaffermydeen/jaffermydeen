@@ -61,8 +61,8 @@ const Skills = () => {
       <div className="section-container">
         <AnimatedSection>
           <p className="text-primary font-mono text-sm mb-2">{'// my skills'}</p>
-          <h2 className="section-title text-secondary">
-            Tech <span className="text-gradient">​Skills</span>
+          <h2 className="section-title text-secondary text-xl">​Tech Skills 
+            <span className="text-gradient">​Skills</span>
           </h2>
           <p className="section-subtitle mt-4">
             A collection of technologies and tools I've honed through projects and continuous learning.
