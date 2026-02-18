@@ -4,7 +4,7 @@ import { Code, Database, Zap, TrendingUp } from 'lucide-react';
 const stats = [{
   icon: Code,
   label: 'Projects Completed',
-  value: '15+'
+  value: '10+'
 }, {
   icon: Database,
   label: 'Data Sets Analyzed',
