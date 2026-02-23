@@ -57,8 +57,8 @@ const Skills = () => {
       <div className="section-container">
         <AnimatedSection>
           <p className="text-primary font-mono text-sm mb-2">{'// my skills'}</p>
-          <h2 className="section-title text-xl text-primary-foreground">​Tech Skills 
-            <span className="text-gradient">​Skills</span>
+          <h2 className="section-title text-xl text-primary-foreground">
+            <span className="text-gradient">s</span>
           </h2>
           <p className="section-subtitle mt-4">
             A collection of technologies and tools I've honed through projects and continuous learning.
@@ -82,22 +82,22 @@ const Skills = () => {
                   <span className="text-foreground">{category.title}</span>
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {category.skills.map((skill) => (
-                    <span
-                      key={skill.name}
-                      className="px-3 py-1.5 rounded-full text-sm font-medium border"
-                      style={{ color: skill.color, borderColor: skill.color, background: `${skill.color}18` }}>
+                  {category.skills.map((skill) =>
+                <span
+                  key={skill.name}
+                  className="px-3 py-1.5 rounded-full text-sm font-medium border"
+                  style={{ color: skill.color, borderColor: skill.color, background: `${skill.color}18` }}>
                       {skill.name}
                     </span>
-                  ))}
+                )}
                 </div>
               </motion.div>
             </AnimatedSection>
           )}
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default Skills;
