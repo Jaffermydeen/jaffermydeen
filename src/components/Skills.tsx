@@ -23,13 +23,12 @@ const skillCategories: SkillCategory[] = [
   { name: 'C++', color: 'hsl(220 75% 55%)' }]
 },
 {
-  title: 'Arts & Science',
+  title: 'Core Subjects',
   emoji: '⚡',
   skills: [
-  { name: 'MATLAB', color: 'hsl(20 80% 50%)' },
-  { name: 'Arduino / IoT', color: 'hsl(190 70% 45%)' },
-  { name: 'Circuit Design', color: 'hsl(265 80% 60%)' },
-  { name: 'Embedded C', color: 'hsl(220 70% 50%)' }]
+  { name: 'Data Structures', color: 'hsl(20 80% 50%)' },
+  { name: 'Database Management System (DBMS)', color: 'hsl(190 70% 45%)' },
+  { name: 'Operating System', color: 'hsl(265 80% 60%)' }]
 },
 {
   title: 'Tools & Others',
