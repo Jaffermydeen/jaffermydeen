@@ -58,7 +58,7 @@ const Hero = () => {
         }} transition={{
           delay: 0.6,
           duration: 0.5
-        }} className="text-muted-foreground text-lg md:text-xl lg:text-2xl mb-8 max-w-xl mx-auto lg:mx-0">Aspiring Data Analyst | BCA Graduate</motion.p>
+        }} className="text-muted-foreground text-lg md:text-xl lg:text-2xl mb-8 max-w-xl mx-auto lg:mx-0">Aspiring Data Analyst passionate about turning data into meaningful insights | BCA Graduate</motion.p>
 
           <motion.div initial={{
           opacity: 0,
