@@ -56,9 +56,9 @@ const Skills = () => {
     <section id="skills" className="relative">
       <div className="section-container">
         <AnimatedSection>
-          <p className="text-primary font-mono text-sm mb-2">{'// my skills'}</p>
+          <p className="text-primary font-mono mb-2 text-base">{'// my skills'}</p>
           <h2 className="section-title text-xl text-primary-foreground">
-            <span className="text-gradient">s</span>
+            <span className="text-gradient text-xl"></span>
           </h2>
           <p className="section-subtitle mt-4">
             A collection of technologies and tools I've honed through projects and continuous learning.
