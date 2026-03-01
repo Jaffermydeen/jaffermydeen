@@ -19,7 +19,7 @@ const projects: Project[] = [
     description:
       'Developed a complete SQL-based data analysis project using MySQL to analyze business operations and sales workflows. Designed normalized relational tables and established primary and foreign key relationships to maintain data consistency. Performed complex SQL queries using joins, subqueries, aggregate functions, and window functions to evaluate sales performance, customer behavior, and product trends. Created views and stored procedures to automate recurring reports and optimize data retrieval. Improved query performance and ensured accurate business insights for data-driven decision-making.',
     tech: ['MySQL', 'SQL', 'Data Analysis', 'Stored Procedures'],
-    github: '/Adventures_work_cycle.sql',
+    github: 'https://github.com/Jaffermydeen/SQL-PROJECT/blob/main/Adventures_works_cycle.sql',
     gradient: 'from-[hsl(30,100%,50%)] to-[hsl(50,100%,55%)]',
     emoji: '📊',
   },
