@@ -28,6 +28,7 @@ const projects: Project[] = [
     description:
       'Analyzed a real-world e-commerce dataset using SQL to extract insights on customer behavior, sales trends, and product performance. Performed joins across multiple tables including customers, orders, payments, and products. Identified top-performing products and categories using aggregate functions like COUNT, SUM, and GROUP BY, delivering actionable business insights.',
     tech: ['SQL', 'Data Analysis', 'Data Cleaning', 'E-Commerce'],
+    live: '/olist_ecommerce_projectsql.sql',
     gradient: 'from-[hsl(160,80%,45%)] to-[hsl(200,90%,50%)]',
     emoji: '🛒',
   },
